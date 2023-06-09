@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device, initial-scale=1.0">
+  <title>Todoty</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script type="module" src="/src/main.ts" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1 class="offscreen">My List</h1>
+
+    <section class="new-item-entry">
+      <h2 class="offscreen">New Item Entry</h2>
+      <form class="new-item-entry__form" id="item-entry-form">
+        <label for="new-item" class="offscreen">Enter a new to do item</label>
+        <input class="new-item-entry__input" id="new-item" type="text" maxlength="40" autocomplete="off" placeholder="Add item" />
+        <button id="add-item" class="button new-item-entry__button" title="Add new item" aria-label="Add new item to list">
+          +
+        </button>
+      </form>
+    </section>
+
+    <section class="list-container">
+      <header class="list-title">
+        <h2 id="list-name">List</h2>
+        <button id="clear-items-button" class="button list-title__buton" title="Clear the list" aria-label="Remove all items from the list">
+          Clear
+        </button>
+      </header>
+      <hr />
+      <ul class="list-items"> 
+        <li class="item">
+          <input type="checkbox" id="1">
+          <label for="1">eat</label>
+          <button class="button">X</button>
+        </li>
+        <li class="item">
+          <input type="checkbox" id="2">
+          <label for="2">sleep</label>
+          <button class="button">X</button>
+        </li>
+        <li class="item">
+          <input type="checkbox" id="3">
+          <label for="2">code</label>
+          <button class="button">X</button>
+        </li>
+      </ul> 
+    </section>
+  </main>
+</body>
+</html>
