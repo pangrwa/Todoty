@@ -146,6 +146,10 @@ section {
   color: red;
 }
 
+#title {
+  padding: 2rem;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 1rem;
