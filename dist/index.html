@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device, initial-scale=1.0">
+  <title>Todoty</title>
+  
+  
+  <script type="module" crossorigin src="/Todoty/assets/index-330846bc.js"></script>
+  <link rel="stylesheet" href="/Todoty/assets/index-cd18231b.css">
+</head>
+
+<body>
+  <main>
+    <h1 id="title">Todoty</h1>
+
+    <section class="new-item-entry">
+      <h2 class="offscreen">New Item Entry</h2>
+      <form class="new-item-entry__form" id="item-entry-form">
+        <label for="new-item" class="offscreen">Enter a new to do item</label>
+        <input class="new-item-entry__input" id="new-item" type="text" maxlength="40" autocomplete="off" placeholder="Add item" />
+        <button id="add-item" class="button new-item-entry__button" title="Add new item" aria-label="Add new item to list">
+          +
+        </button>
+      </form>
+    </section>
+
+    <section class="list-container">
+      <header class="list-title">
+        <h2 id="list-name">List</h2>
+        <button id="clear-items-button" class="button list-title__buton" title="Clear the list" aria-label="Remove all items from the list">
+          Clear
+        </button>
+      </header>
+      <hr />
+      <ul id="list-items"> 
+
+      </ul> 
+    </section>
+  </main>
+</body>
+</html>
